@@ -1,0 +1,7 @@
+﻿npm install -g express-generator
+express -V(大写)
+express -e music
+cd music
+npm install（安装）
+npm install -g supervisor （安装supervisor）
+supervisor bin/www
