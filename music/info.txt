@@ -5,3 +5,6 @@ cd music
 npm install（安装）
 npm install -g supervisor （安装supervisor）
 supervisor bin/www
+
+线上访问地址：http://passionate.herokuapp.com
+项目源码地址：https://github.com/doving/webAudio
