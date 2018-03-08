@@ -26,7 +26,7 @@ header{
   top: 10px;
   right: 10px;
   height: 150px;
-  border: solid #fff 1px;
+  /*border: solid #fff 1px;*/
 }
 
 header h1{
@@ -94,16 +94,18 @@ header .type li.selected {
   left: 10px;
   top: 170px;
   bottom: 10px;
-  width: 200px;
+  width: 15%;
   border:solid #fff 1px;
-}
-.left ul{
   overflow: auto;
 }
+
 .left ul li{
   height: 30px;
   line-height: 30px;
   cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .left ul li.selected{
   color: green;
@@ -113,6 +115,61 @@ header .type li.selected {
   top: 170px;
   right: 10px;
   bottom: 10px;
-  left: 220px;
-  border:solid #fff 1px;
+  left: calc(15% + 20px);
+  /*border:solid #fff 1px;*/
+}
+
+input[type="range"]{
+  -webkit-appearance: none;
+  height: 8px;
+  background: #999;
+  border-radius: 10px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+input[type="range"]::-moz-range-track{
+  height: 8px;
+  background: #999;
+  border-radius: 10px;
+  border: none;
+}
+
+input[type="range"]::-moz-range-thumb{
+  height: 12px;
+  width: 12px;
+  background: #fff;
+  border: none;
+  border-radius: 100%;
+}
+
+@media screen and (max-width:800px), screen and (max-height:500px){
+    body{
+      font-size: 12px;
+    }
+    header{
+      height: 80px;
+    }
+    
+    header h1{
+      font-size: 24px;
+      height: 34px;
+      line-height: 34px;
+    }
+
+    header .type li {
+      height: 16px;
+      line-height: 16px;
+      width: 50px;
+    }
+    .left,.right{
+      top:100px;
+    }
 }
