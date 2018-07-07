@@ -8,3 +8,5 @@ supervisor bin/www
 
 线上访问地址：http://passionate.herokuapp.com
 项目源码地址：https://github.com/doving/webAudio
+
+localhost:3000
